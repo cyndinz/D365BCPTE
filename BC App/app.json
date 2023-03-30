@@ -17,8 +17,8 @@
   "runtime": "10.1",
   "idRanges": [
     {
-      "from": 58955,
-      "to": 58989
+      "from": 50100,
+      "to": 50170
     }
   ],
   "resourceExposurePolicy": {
