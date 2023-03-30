@@ -16,7 +16,7 @@ codeunit 50100 TranslationManagement
 
     begin
         Content.WriteFrom('{domain":"' + Name + '"}');
-        Client.DefaultRequestHeaders().Add('Authorization', 'Bearer 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');
+        Client.DefaultRequestHeaders().Add('Authorization', 'Bearer sk-xWtOfdUghjQgsZ9Xcl1TGJlhMuEjdzT9ZT3BlbkFJohlFLm6'); //api key has been disabled :)
         Client.Post('https://api.openai.com/v1/completions', Content, ResponseMessage);
         if not ResponseMessage.IsSuccessStatusCode() then
             Error('Error connecting to the Web Service.');
