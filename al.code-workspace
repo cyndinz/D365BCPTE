@@ -5,7 +5,14 @@
     },
     {
       "path": "BC App"
+    },
+    {
+      "name": "Azure Functions",
+      "path": "../../Azure Functions"
     }
   ],
-  "settings": {}
+  "settings": {
+    "debug.internalConsoleOptions": "neverOpen",
+    "al.showHomeAtStartup": "WhenUpdated"
+  }
 }
