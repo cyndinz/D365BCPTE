@@ -5,14 +5,6 @@
     },
     {
       "path": "BC App"
-    },
-    {
-<<<<<<< HEAD
-      "name": "Azure Functions",
-      "path": "../../Azure Functions"
-=======
-      "path": "BC App.Test"
->>>>>>> d90b8c5d0d54ec9584db94396dfb81a64353175d
     }
   ],
   "settings": {
