@@ -1,6 +1,16 @@
 {
   "country": "us",
-  "appFolders": [],
-  "testFolders": [],
-  "bcptTestFolders": []
+  "appFolders": [
+
+  ],
+  "testFolders": [
+
+  ],
+  "bcptTestFolders": [
+
+  ],
+  "insiderSasTokenSecretName":"<InsiderSasToken>", //inside the quotation mark it should be the github secret name
+  "environments":[
+    "Cindy"
+  ]
 }
