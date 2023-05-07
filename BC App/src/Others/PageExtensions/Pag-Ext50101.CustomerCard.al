@@ -1,4 +1,4 @@
-pageextension 50101 "Customer Card" extends "Customer Card"
+pageextension 50101 CustomerCard extends "Customer Card"
 {
     layout
     {
@@ -14,5 +14,15 @@ pageextension 50101 "Customer Card" extends "Customer Card"
                 end;
             end;
         }
+
+        // addlast(General)
+        // {
+        //     field("Lookup Value Code_BO_TSL"; Rec."Lookup Value Code_BO_TSL")
+        //     {
+        //         ApplicationArea = All;
+        //         ToolTip = 'specifies lookup value code';
+        //     }
+
+        // }
     }
 }
