@@ -1,5 +1,16 @@
 tableextension 50100 Customer extends Customer
 {
+
+    fields
+    {
+        field(10001; RewardPoints; Integer)
+        {
+            Caption = 'Reward Points';
+            DataClassification = CustomerContent;
+            MinValue = 0;
+        }
+    }
+
     // fields
     // {
     //     field(59000; Bonuses_BO_TSL; Integer)

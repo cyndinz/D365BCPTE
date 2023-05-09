@@ -1,7 +1,9 @@
-/*Exercise - Use logical and relational expressions
-You want to test your newly acquired knowledge about logical operators. 
-Additionally, you want to create a page, add several controls and an action to it, 
-and write code that calculates a Boolean variable through a relational expression.*/
+/// <summary>
+/// Exercise - Use logical and relational expressions
+/// You want to test your newly acquired knowledge about logical operators. 
+/// Additionally, you want to create a page, add several controls and an action to it, 
+/// and write code that calculates a Boolean variable through a relational expression.
+/// </summary>
 page 50105 "Expressions Card"
 {
     PageType = Card;
