@@ -56,6 +56,7 @@ page 50109 "Work Item List"
                 ApplicationArea = All;
                 Caption = 'Send to Azure DevOps';
                 Image = PostSendTo;
+                RunObject = codeunit WorkItemsManagement;
   
                 trigger OnAction()
                 var

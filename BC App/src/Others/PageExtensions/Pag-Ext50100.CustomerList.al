@@ -53,6 +53,25 @@ pageextension 50100 CustomerList extends "Customer List"
                 // end;
             }
         }
+
+        addlast(navigation)
+        {
+            action(Xmlport)
+            {
+                Caption = 'Export CVS';
+                ApplicationArea = All;
+                Image = XMLFile;
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+                ToolTip = 'Export CVS';
+
+                trigger OnAction();
+                begin
+                    RunXMLportExport();
+                end;
+            }
+        }
     }
 
 
@@ -61,5 +80,22 @@ pageextension 50100 CustomerList extends "Customer List"
     begin
         Message('App published: Hello world');
     end;
+
+    procedure RunXMLportExport()
+    var
+        TempBlob: Codeunit "Temp Blob";
+        FileName: Text;
+        FileOutStream: OutStream;
+        FileInStream: InStream;
+        outputFileName: Text;
+    begin
+        TempBlob.CREATEOUTSTREAM(FileOutStream);
+        Xmlport.Export(Xmlport::MyXmlportExportCustomer, FileOutStream);
+        TempBlob.CREATEINSTREAM(FileInStream);
+        outputFileName := 'MyOutputFile.xml';
+        DownloadFromStream(FileInStream, '', '', '', outputFileName);
+        //The output is saved in the default browser's Download folder
+    end;
+
 }
 
