@@ -3,7 +3,7 @@ tableextension 50100 Customer extends Customer
 
     fields
     {
-        field(10001; RewardPoints; Integer)
+        field(50000; RewardPoints; Integer)
         {
             Caption = 'Reward Points';
             DataClassification = CustomerContent;

@@ -1,0 +1,40 @@
+permissionset 50100 "PermissionSet"
+{
+    Assignable = true;
+    Caption = 'PermissionSet', MaxLength = 30;
+    Permissions =
+        table WorkItem = X,
+        tabledata WorkItem = RMID,
+        table "Bonus Entry_BO_TSL" = X,
+        tabledata "Bonus Entry_BO_TSL" = RMID,
+        table "Bonus Header_BO_TSL" = X,
+        tabledata "Bonus Header_BO_TSL" = RMID,
+        table "Bonus Line_BO_TSL" = X,
+        tabledata "Bonus Line_BO_TSL" = RMID,
+        table "Bonus Setup_BO_TSL" = X,
+        tabledata "Bonus Setup_BO_TSL" = RMID,
+        table "Reward Level" = X,
+        tabledata "Reward Level" = RMID,
+        table "Activation Code Information" = X,
+        tabledata "Activation Code Information" = RMID,
+        table "Customer Rewards Mgt. Setup" = X,
+        tabledata "Customer Rewards Mgt. Setup" = RMID,
+        codeunit WorkItemsManagement = X,
+        codeunit "Bonus Calculation_BO_TSL" = X,
+        codeunit CompanyAddressProvider = X,
+        codeunit PrivateAddressProvider = X,
+        codeunit TranslationManagement = X,
+        page "Armstrong Card" = X,
+        page "Statements Card" = X,
+        page "Expressions Card" = X,
+        page "Rewards Level List" = X,
+        page WorkItemCard = X,
+        page "Work Item List" = X,
+        page "Bonus Card_BO_TSL" = X,
+        page "Bonus Entries_BO_TSL" = X,
+        page "Bonus List_BO_TSL" = X,
+        page "Bonus Subform_BO_TSL" = X,
+        page "Bonus Setup_BO_TSL" = X,
+        page MyAddress = X,
+        xmlport MyXmlportExportCustomer = X;
+}
