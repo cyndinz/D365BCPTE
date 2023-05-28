@@ -67,4 +67,10 @@ page 50109 "Work Item List"
             }
         }
     }
+
+    local procedure CountTheNumbersOfLettersInSource()
+    var
+    begin
+        
+    end;
 }
